@@ -1,0 +1,561 @@
+*
+{
+   box-sizing: border-box;
+   font-family: Alegreya Sans,sans-serif,monospace;
+   scroll-behavior: smooth;
+}
+body
+{
+   margin: 0px;
+
+}
+/* start of the nav */
+.nav-bar .logo
+{
+    width: 27%;
+    text-align: center;
+    float: left;
+}
+.logo img
+{
+   width:180px;
+   padding: 10px;
+   position: relative;
+   margin-top: 5px;
+   margin-left: 10px;
+   cursor: pointer;
+}
+.links li a
+{
+    text-decoration: none;
+    color: white;
+}
+.nav-bar ul
+{
+    list-style-type: none;
+    float: right;
+    width:45%;
+}
+.nav-bar ul li
+{
+    text-transform: capitalize;
+    font-size: 16px;
+    float: left;
+    margin: 5px 12px;
+    padding: 5px;
+    cursor: pointer
+}
+.nav-bar li:hover a
+{
+    color:rgb(174,151,104)
+}
+.settings
+{
+    float: right;
+    display: none;
+    transform: scale(1.9);
+    margin-top:30px;
+    margin-right:100px;
+    width: 20px;
+    color: white;
+}
+.settings:hover
+{
+    color:rgb(174,151,104)
+}
+.clear-fix
+{
+    clear: both;
+}
+/* end of the nav */
+
+/* start of the home */
+.home
+{
+  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../images/home/drew-coffman-1872.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  /* overflow: auto; */
+}
+.home .caption
+{
+    width: 57%;
+    margin: 100px  auto 0px;
+    text-align: center;
+}
+.caption p
+{
+    color: #ccc;
+    font-size:24px;
+    margin-bottom:40px;
+}
+.caption h1
+{
+    margin-top: 10px;
+    color: White;
+    color: #fff;
+    font-size: 80px;
+    margin-bottom: 30px;
+ 
+}
+.caption .btn
+{
+    padding: 18px 28px;
+    border: none;
+    color:white;
+    border-radius: 8px;
+    font-size: 18px;
+}
+.caption .btn1
+{
+    background-color: rgb(142,119,84);
+}
+.btn1:hover
+{
+    background-color:white;
+    color: black;
+    cursor: pointer;
+}
+.caption .btn2
+{
+    background-color:transparent;
+    border: white 1.8px solid;
+    margin-left: 6px;
+}
+.btn2:hover
+{
+    background-color:white;
+    color: black;
+    cursor: pointer;
+}
+/* fixed icon */
+.fixed-icon 
+{ 
+   background-color:white;
+   color: rgb(142,119,84);
+   width: 40px;
+   padding: 3px;
+   position: fixed;
+   right: 0;
+   top:30%;
+   border-radius:5px;
+   z-index: 5555555555;
+}
+.fixed-icon i
+{
+    margin:12px 0px 12px 5px;
+   
+}
+.fixed-icon i:hover
+{
+    color: skyblue;
+    cursor: pointer;
+}
+.fixed-icon .icon2
+{
+    margin-bottom: 20px;
+}
+/* animated div */
+.animated-div
+{
+    width: 40px;
+    height: 60px;
+    border-radius:30px;
+    border: 2px solid white;
+    margin: 60px auto 0px;
+}
+.circle-point
+{
+    width:10px;
+    height: 10px;
+    background-color: grey;
+    margin: 15px auto 0px;
+    border-radius: 50%;
+    position: relative;
+    animation: up-point infinite 1.5s ;
+    z-index: 55;
+}
+.home .botom-home
+{
+    display: block;
+    width: 40px;
+    margin: auto;
+}
+@keyframes up-point {
+   0%{top:0px;} 
+   100%{top:15px;opacity: 0;}
+}
+
+/* end of the home */
+
+/* start of about */
+.about-container
+{
+    width: 77%;
+    margin:  auto;
+    height: 75vh;
+}
+.about-left
+{
+  width: 50%;
+  margin-top: 100px ;
+  float:left;
+}
+.about-right 
+{
+    width:50% ;
+    float: right;
+    margin-top: 100px;
+    padding-left: 30px;
+}
+.about-right p
+{
+    margin-top: 15px;
+}
+.all-about-icons
+{
+    margin-top: 40px;
+}
+.about-left img
+{
+    width: 95%;
+}
+.about h3
+{
+color: rgb(48, 48, 48);
+font-size: 28px;
+margin-bottom: 25px
+}
+.about p
+{
+color: rgb(104, 104, 104);
+font-size: 17px;
+font-weight: 400;
+margin-bottom: 0px;
+line-height: 1.5;
+}
+.about-circle,.contact-circle,.footer-circle
+{
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid grey;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrow-up
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: gray;
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+.arrow-up-property
+{
+    text-decoration: none;
+}
+.arrow-up-property:hover .arrow-up
+{
+  background-color: green;
+}
+.arrow-up i
+{
+    font-size: 15px;
+    color: white;
+}
+
+.about-circle i
+{
+    color: rgb(142,119,84);
+}
+.about-icons p 
+{
+    float: left;
+    margin-top: 10px;
+    margin-left:8px;
+}
+.about-circle 
+{
+float: left;
+
+}
+
+/* end of about */
+
+
+/* start of location  */
+.location-container
+{
+    margin-top: 50px;
+    width: 77%;
+    margin:  auto;
+    background-color: rgb(248,248,248);
+}
+.location-cont-container
+{
+    background-color:rgb(248,248,248);
+    margin-bottom:65px
+}
+.location
+{
+    margin-top: 90px;
+}
+.location-left
+{
+    float: left;
+    width: 45%;
+    margin-top:60px
+}
+.location-left h3 .letter-o-our
+{
+    font-size: 45px;
+}
+.location-left p
+{
+    color: rgb(104, 104, 104); 
+    line-height: 1.5;
+}
+.location-left h3
+{
+    font-family: 'Luxurious Roman', cursive;  
+    color: rgb(48, 48, 48);
+    font-size: 32px;
+}
+.location-right
+{
+    float: right;
+    width: 50%;
+    margin: 50px 0px;    
+}
+.location-right img
+{
+    width: 100%;
+    
+}
+/* end of location */
+
+/* start of our baking */
+.baking-container
+{
+    width: 80%;
+    margin:  auto;
+    height: 90vh; 
+    text-align: center;
+}
+.item
+{
+   text-align: center;
+   float: left;
+   width:33.33%;
+   padding: 20px;
+}
+.item img 
+{
+    width: 100%;
+}
+.item h3
+{
+    color: rgb(48, 48, 48);
+    font-family: "Alegreya";
+    font-size: 22px;
+    
+}
+.item p
+{
+    padding: 5px;
+    color: rgb(104, 104, 104); 
+    line-height: 1.5;
+}
+.all-footer-icons
+{
+    display: flex;
+    justify-content: center;
+}
+/* end of baking */
+
+/* start of contact */
+.cont-container-contact
+{
+    background-color: rgb(248,248,248);
+    margin-top: 30px;
+}
+.contact-container
+{
+    width: 77%;
+    margin:  auto;
+   
+}
+.contact-circle
+{
+    background-color: rgb(142,119,84);
+    float: left;
+}
+.contact-circle i
+{
+    color: white;
+}
+.contact-icons p
+{
+    float: left;
+    margin-top: 10px;
+    margin-left:8px;
+}
+.contact-left
+{
+    margin-top:100px;
+    width:45%;
+    float: left;
+}
+.contact-right
+{
+    margin-top:100px;
+    width:50%;
+    float: right;
+
+}
+.frame iframe
+{
+    width: 100%;
+    
+}
+.contact-left p
+{
+    color: rgb(104, 104, 104); 
+    line-height: 1.5;
+}
+.contact-left h3
+{
+color: rgb(48, 48, 48);
+font-size: 32px;
+margin:50px 0px 25px
+}
+/* end of our contact */
+
+
+/* start of info */
+.cont-info-continer
+{
+    background-color:rgb(64,61,56);
+    margin-top: 50px;
+}
+.information-container
+{
+    width: 77%;
+    margin: auto;
+}
+.info
+{
+    width:25%;
+    float:left;
+}
+.info-1 ,.info-2,.info-3
+{
+    padding-right:20px ;
+}
+.info h3
+{
+color: rgb(255, 255, 255);
+font-size: 17px;
+margin-bottom: 25px;
+margin-top: 50px;
+}
+.info p
+{    
+    font-size:14px;
+    color: rgb(104, 104, 104); 
+    line-height: 1.5;
+}
+.info-4 p span
+{
+  margin-left: 6px; 
+}
+.info-4 p span:hover
+{
+ color: white;
+ cursor: pointer;
+}
+.info  hr
+{
+ height: 3.5px;
+ margin-top:-3px;
+ color: rgb(74,71,66);
+ background-color: rgb(74,71,66);
+}
+.info-4
+{
+    background-image: url(../images/map/map.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 450px;
+   
+}
+.info-4 p
+{
+    padding-top: 10px;
+    color:rgb(169,169,144)
+}
+/* end of info */
+
+/* start of footer of page*/
+.footer
+{
+    background-color:rgb(53,51,48);
+    height: 35vh;
+}
+.f-container
+{
+text-align: center;
+ padding-top: 20px;
+}
+
+.footer-circle
+{
+ float: left;
+ margin-left:10px;
+ background-color: grey;
+ border: none;
+ cursor: pointer;
+}
+.f-container img
+{
+    width: 250px;
+}
+.copy
+{
+ color: rgb(104, 104, 104);;
+}
+
+.fa-brands 
+{
+    color:white;
+    font-size: 24px;
+}
+
+.face:hover ,.linked:hover
+{
+    background-color: #007BB5;
+    color:white;
+
+}
+.google:hover
+{     
+    
+    background-color: tomato;
+    color:white;
+    
+}
+.tw:hover
+{
+    background-color: skyblue;
+    color:white;
+}
+/* end of the footer of page */
